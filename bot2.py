@@ -9,12 +9,12 @@ import time
 import socketserver
 import mcstatus
 from wakeonlan import send_magic_packet
-from mcstatus import MinecraftServer
+from mcstatus import JavaServer
 
 def proc_numpy(a):
     print(a)
 
-server1 = MinecraftServer.lookup("192.168.11.13")
+server1 = JavaServer.lookup("192.168.11.13")
 try:
     status = server1.status()
     print("サーバーオンライン")
@@ -30,7 +30,9 @@ maxMemory = '10G'  # 任意の最大メモリ割り当てサイズ
 minMemory = '10G'  # 任意の最小メモリ割り当てサイズ
 
 # 接続に必要なオブジェクトを生成
-client = discord.Client()
+intents = discord.Intents.default()
+intents.message_content=True
+client = discord.Client(intents=intents)
 
 # サーバー操作用
 class server_process:
