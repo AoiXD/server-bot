@@ -4,7 +4,7 @@
 
 コミットをご覧いただくと、初期段階から最新のバージョンにアップデートした箇所まで確認できますので、ぜひご覧ください。
 
-元となった物からサーバーPCのシャットダウンなどカスタマイズされています。
+元となった物からサーバーPCのシャットダウンなど追加されております。
 
 元:https://github.com/turtton/ServerStarterBOT
 元2:https://github.com/AoiXD/ServerStarterBOT
